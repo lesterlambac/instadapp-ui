@@ -7,3 +7,17 @@
   -webkit-box-shadow: 0px 54px 20px -31px rgb(22 30 46 / 21%);
   -moz-box-shadow: 0px 54px 20px -31px rgb(22 30 46 / 21%);
 }
+
+#menu:target {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menu:target > .close {
+  display: block;
+}
