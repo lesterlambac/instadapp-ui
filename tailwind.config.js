@@ -16,9 +16,12 @@ module.exports = {
         'sans': ['Montserrat']
       },
       minWidth: {
-        '0': '0',
+        '40': '10rem',
         '96': '24rem',
-       }
+      },
+      gridTemplateColumns: {
+       'box': 'auto minmax(0,1fr)',
+      }
     },
   },
   variants: {

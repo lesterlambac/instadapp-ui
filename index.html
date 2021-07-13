@@ -132,11 +132,49 @@
       <div id="main" class="main w-full xl:w-3/4 bg-gray-100 border-l border-gray-150">
 
         <div class="flex items-center justify-between py-4 px-4 md:px-8 bg-white border-b border-gray-150">
-          <div class="relative h-full">
-            <label for="account" class="absolute text-xs absolute left-0 pt-3 pl-2 text-gray-400">Account</label>
-            <select id="account" name="account" autocomplete="account" class="text-secondary font-bold tracking-wide pl-16 block py-2 px-3 border border-gray-200 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-              <option>#30726</option>
-            </select>
+
+          <div class="select relative">
+            <div class="flex items-center justify-between tracking-wide block py-2 px-3 border border-gray-200 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <span class="text-xs text-gray-400">Account</span>
+              <span id="account" type="text" class="flex-1 text-center px-3 text-secondary font-bold">#30726</span>
+              <span>
+                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 5.75L6.20711 6.45711C5.81658 6.84763 5.18342 6.84763 4.79289 6.45711L5.5 5.75ZM1.29289 2.95711L0.585786 2.25L2 0.835786L2.70711 1.54289L1.29289 2.95711ZM8.29289 1.54289L9 0.835786L10.4142 2.25L9.70711 2.95711L8.29289 1.54289ZM4.79289 6.45711L1.29289 2.95711L2.70711 1.54289L6.20711 5.04289L4.79289 6.45711ZM4.79289 5.04289L8.29289 1.54289L9.70711 2.95711L6.20711 6.45711L4.79289 5.04289Z" fill="#161E2E"/>
+                </svg>
+              </span>
+            </div>
+            <div class="absolute right-0 left-0 min-w-40 flex flex-col bg-white border border-gray-200 rounded-b-md shadow-lg">
+              <div class="bg-white sm:text-sm border-b">
+                <div class="w-full flex items-center justify-between hover:bg-gray-100 py-2 px-3 my-1 cursor-pointer">
+                  <div class="text-xs text-secondary font-bold">#4512345</div>
+                  <span class="px-1">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 5.86603C-0.166667 5.48113 -0.166667 4.51888 0.5 4.13397L6.5 0.669874C7.16667 0.284973 8 0.766099 8 1.5359L8 8.4641C8 9.2339 7.16667 9.71503 6.5 9.33013L0.5 5.86603Z" fill="#3F75FF"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="bg-white sm:text-sm border-b ">
+                <div class="w-full flex items-center justify-between hover:bg-gray-100 py-2 px-3 my-1 cursor-pointer">
+                  <div class="text-xs text-secondary font-bold">#4512345</div>
+                  <span class="px-1">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 5.86603C-0.166667 5.48113 -0.166667 4.51888 0.5 4.13397L6.5 0.669874C7.16667 0.284973 8 0.766099 8 1.5359L8 8.4641C8 9.2339 7.16667 9.71503 6.5 9.33013L0.5 5.86603Z" fill="#3F75FF"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="bg-white sm:text-sm border-b rounded-b-md">
+                <div class="w-full flex items-center justify-between hover:bg-gray-100 py-2 px-3 my-1 cursor-pointer">
+                  <div class="text-xs text-secondary font-bold">#4512345</div>
+                  <span class="px-1">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 5.86603C-0.166667 5.48113 -0.166667 4.51888 0.5 4.13397L6.5 0.669874C7.16667 0.284973 8 0.766099 8 1.5359L8 8.4641C8 9.2339 7.16667 9.71503 6.5 9.33013L0.5 5.86603Z" fill="#3F75FF"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="flex items-center justify-center -mx-2">
@@ -182,7 +220,7 @@
             <div class="grid grid-cols-6 -mx-2">
   
               <div class="col-span-6 md:col-span-6 lg:col-span-2 bg-yellow py-8 px-6 rounded-lg border border-gray-250 shadow-lg flex items-enter justify-between mb-4 mx-2">
-                <div class="">
+                <div class="flex-shrink-0">
                   <p class="text-white text-2xl font-semibold tracking-wide overflow-hidden">$12,526,243.512</p>
                   <span class="text-white">Net Worth</span>
                 </div>
