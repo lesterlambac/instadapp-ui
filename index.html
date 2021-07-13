@@ -17,9 +17,9 @@
   <body>
 
     <!-- InstadApp -->
-    <div class="flex flex-col xl:flex-row h-screen">
+    <div class="flex flex-col xl:flex-row">
 
-      <div class="sidebar w-full xl:w-1/4 py-4 px-4 xl:py-8 xl:px-8 border-b border-gray-150 bg-white xl:relative">
+      <div class="sidebar flex-none w-full xl:w-1/4 xl:min-w-96 py-4 px-4 md:py-8 md:px-8 border-b border-gray-150 bg-white xl:relative">
         <div class="flex items-center justify-between xl:block">
           <svg class="relative z-20" swidth="128" height="20" viewBox="0 0 128 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 3.06102H3.97856V17.166H0V3.06102ZM20.1911 3.06102V17.166H16.9159L10.707 9.64993V17.166H6.80885V3.06102H10.084L16.293 10.5765V3.06133H20.1911V3.06102ZM27.9403 17.4483C26.8017 17.4483 25.6966 17.3072 24.6248 17.0252C23.5529 16.7429 22.6824 16.3669 22.0129 15.8967L23.3187 12.9547C23.9484 13.3712 24.6785 13.7071 25.509 13.9623C26.3394 14.2177 27.1565 14.3452 27.9602 14.3452C29.4875 14.3452 30.2509 13.9619 30.2509 13.1964C30.2509 12.7936 30.03 12.4979 29.5879 12.31C29.1591 12.1085 28.4626 11.9 27.4983 11.6854C26.4401 11.457 25.5559 11.2149 24.846 10.9597C24.1412 10.6947 23.5129 10.2586 23.0173 9.69043C22.5084 9.11279 22.254 8.33358 22.254 7.35278C22.254 6.49318 22.4882 5.72082 22.957 5.0357C23.4262 4.33717 24.1224 3.78633 25.0467 3.38348C25.9846 2.98032 27.1298 2.77905 28.4828 2.77905C29.4071 2.77905 30.318 2.88623 31.2155 3.10121C32.1128 3.30279 32.9031 3.605 33.5863 4.00785L32.3607 6.97018C31.0214 6.24456 29.7218 5.8819 28.4626 5.8819C27.6722 5.8819 27.0962 6.00278 26.7346 6.24456C26.373 6.47293 26.1922 6.77515 26.1922 7.1512C26.1922 7.52757 26.4065 7.80953 26.8353 7.99771C27.264 8.1859 27.9537 8.38062 28.9047 8.5822C29.9765 8.81058 30.8604 9.05889 31.557 9.32777C32.2669 9.58294 32.8764 9.99919 33.3856 10.5771C33.9079 11.1411 34.1692 11.9137 34.1692 12.8942C34.1692 13.7404 33.9346 14.5062 33.4658 15.1914C32.997 15.8765 32.2939 16.4273 31.356 16.8436C30.4183 17.2467 29.2797 17.448 27.9403 17.448V17.4483ZM38.8045 6.22462H34.4845V3.06102H47.0829V6.22462H42.7831V17.166H38.8045V6.22462ZM57.2825 14.4255H51.3348L50.2297 17.166H46.171L52.3796 3.06102H56.2979L62.5267 17.166H58.3876L57.2825 14.4255ZM56.1171 11.4838L54.3087 6.97018L52.5002 11.4838H56.1171Z" fill="#161E2E"/>
@@ -34,16 +34,18 @@
           </a>
         </div>
         
-        <div id="menu" class="bg-white hidden xl:block py-4 px-4 z-10">
-          <a href="#" class="close hidden cursor-pointer absolute right-0 top-0 m-4">
+        <div id="menu" class="bg-white hidden xl:block py-4 px-6 z-10">
+          <a href="#" class="close hidden cursor-pointer absolute right-0 top-0 m-6">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.02507 6.27483C8.18759 6.34418 8.33471 6.44514 8.45788 6.57184L16.0003 14.1142L23.5426 6.57186C23.6658 6.44516 23.8129 6.3442 23.9755 6.27485C24.138 6.2055 24.3127 6.16915 24.4894 6.1679C24.6661 6.16665 24.8412 6.20053 25.0047 6.26757C25.1682 6.33462 25.3167 6.43349 25.4417 6.55843C25.5666 6.68338 25.6655 6.83191 25.7325 6.9954C25.7996 7.15888 25.8335 7.33407 25.8322 7.51076C25.831 7.68746 25.7946 7.86214 25.7253 8.02467C25.6559 8.18719 25.555 8.33431 25.4283 8.45748L17.8859 15.9998L25.4284 23.5424C25.5551 23.6656 25.6561 23.8127 25.7254 23.9752C25.7948 24.1377 25.8312 24.3124 25.8324 24.4891C25.8336 24.6658 25.7998 24.841 25.7327 25.0045C25.6657 25.168 25.5668 25.3165 25.4419 25.4414C25.3169 25.5664 25.1684 25.6653 25.0049 25.7323C24.8414 25.7993 24.6662 25.8332 24.4895 25.832C24.3128 25.8307 24.1382 25.7944 23.9756 25.725C23.8131 25.6557 23.666 25.5547 23.5428 25.428L16.0003 17.8855L8.4577 25.428C8.33453 25.5547 8.18741 25.6557 8.02489 25.725C7.86237 25.7944 7.68768 25.8307 7.51099 25.832C7.33429 25.8332 7.15911 25.7994 6.99562 25.7323C6.83213 25.6653 6.6836 25.5664 6.55865 25.4415C6.43371 25.3165 6.33484 25.168 6.2678 25.0045C6.20076 24.841 6.16687 24.6658 6.16812 24.4891C6.16937 24.3124 6.20573 24.1378 6.27508 23.9752C6.34442 23.8127 6.44538 23.6656 6.57208 23.5424L14.1147 15.9998L6.57226 8.45746C6.44556 8.33429 6.3446 8.18717 6.27526 8.02465C6.20591 7.86212 6.16955 7.68744 6.1683 7.51074C6.16705 7.33405 6.20093 7.15886 6.26798 6.99538C6.33502 6.83189 6.43389 6.68336 6.55883 6.55841C6.68378 6.43346 6.83231 6.3346 6.9958 6.26755C7.15929 6.20051 7.33447 6.16663 7.51116 6.16788C7.68786 6.16913 7.86255 6.20548 8.02507 6.27483Z" fill="#A5ADC6"/>
             </svg>
           </a>
+
+          <div class="close-spacer pt-8"></div>
           
           <div class="balance mt-12 mb-16 py-4 px-6 shadow-xl rounded-lg bg-primary">
             <p class="text-white text-base font-normal mb-2 leading-tight">Balance <span class="text-secondary font-bold">in USD</span></p>
-            <p class="text-white text-md xl:text-3xl font-bold tracking-wide py-2 leading-tight overflow-hidden">$12,526,243.512</p>
+            <p class="text-white text-3xl lg:text-lg xl:text-3xl font-bold tracking-wide py-0 xl:py-2 leading-tight overflow-hidden">$12,526,243.512</p>
             <span class="caret flex items-start py-2">
               <svg class="mr-1" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.38891 1.11109C5.17412 0.896303 4.82588 0.896303 4.61109 1.11109L1.11091 4.61127C0.896125 4.82606 0.896125 5.1743 1.11091 5.38909C1.3257 5.60388 1.67394 5.60388 1.88873 5.38909L5 2.27782L8.11127 5.38909C8.32606 5.60388 8.6743 5.60388 8.88909 5.38909C9.10388 5.1743 9.10388 4.82606 8.88909 4.61127L5.38891 1.11109ZM5.55 11.5L5.55 1.5L4.45 1.5L4.45 11.5L5.55 11.5Z" fill="#32C34A"/>
@@ -100,7 +102,7 @@
           <div class="bg-gray-400 w-40 mx-auto mt-6 border-b border-gray-300 opacity-60"></div>
 
           <div class="absolute inset-x-0 bottom-0 my-8 px-2">
-            <div class="flex items-center justify-center -mx-2">
+            <div class="flex items-center justify-center mx-2">
               <span class="px-2">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8358 11.5459L3.30798 5.84936C3.52982 5.53653 3.87718 5.33789 4.26687 5.33789H19.8339C20.0101 5.33779 20.1841 5.37938 20.3435 5.45968C20.503 5.53998 20.6439 5.65702 20.7563 5.80244L12.2635 11.5459C12.1994 11.5889 12.1253 11.6118 12.0496 11.6118C11.974 11.6118 11.8999 11.5889 11.8358 11.5459ZM12.9859 12.0621L12.9888 12.059L21 6.6455V17.5334C21 18.2529 20.4556 18.8379 19.7842 18.8379H4.21576C4.05598 18.8379 3.89777 18.8041 3.75017 18.7386C3.60258 18.673 3.46849 18.5769 3.35557 18.4557C3.24266 18.3346 3.15314 18.1908 3.09213 18.0325C3.03111 17.8742 2.99981 17.7046 3 17.5334V6.70963L11.0126 12.059C11.6154 12.4625 12.3802 12.4656 12.9859 12.0621Z" fill="#A5ADC6"/>
@@ -127,9 +129,9 @@
         </div>
       </div>
 
-      <div id="main" class="main w-full xl:w-3/4  bg-white border-l border-gray-150">
+      <div id="main" class="main w-full xl:w-3/4 bg-gray-100 border-l border-gray-150">
 
-        <div class="flex items-center justify-between py-4 px-8 border-b border-gray-150">
+        <div class="flex items-center justify-between py-4 px-4 md:px-8 bg-white border-b border-gray-150">
           <div class="relative h-full">
             <label for="account" class="absolute text-xs absolute left-0 pt-3 pl-2 text-gray-400">Account</label>
             <select id="account" name="account" autocomplete="account" class="text-secondary font-bold tracking-wide pl-16 block py-2 px-3 border border-gray-200 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -137,7 +139,7 @@
             </select>
           </div>
 
-          <div class="flex items-center justify-center mx-4">
+          <div class="flex items-center justify-center -mx-2">
             <div class="relative h-full px-2">
               <label for="account" class="absolute text-xs absolute left-0 pt-2 pl-2 text-gray-400">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,18 +172,18 @@
           </div>
         </div>
 
-        <div class="">
+        <div class="bg-white">
 
-          <h2 class="pt-4 px-8 text-2xl tracking-wide font-bold my-6">Dashboard</h2>
+          <h2 class="pt-10 px-4 md:px-8 text-2xl tracking-wide font-bold">Dashboard</h2>
 
-          <h3 class="pt-4 px-8 text-lg text-gray-400 font-semibold tracking-wide">Overview</h3>
+          <h3 class="pt-6 px-4 md:px-8 text-lg text-gray-400 font-semibold tracking-wide">Overview</h3>
 
-          <div class="py-4 px-8">
-            <div class="flex items-center justify-center mb-6 -mx-2">
+          <div class="py-4 px-4 md:px-8">
+            <div class="grid grid-cols-6 mb-2 -mx-2">
   
-              <div class="w-1/3 bg-yellow py-8 px-6 rounded-lg border border-gray-250 shadow-lg flex items-enter justify-between mx-2">
+              <div class="col-span-6 md:col-span-6 lg:col-span-2 bg-yellow py-8 px-6 rounded-lg border border-gray-250 shadow-lg flex items-enter justify-between mb-4 mx-2">
                 <div class="">
-                  <p class="text-white text-2xl font-semibold tracking-wide">$12,526,243.512</p>
+                  <p class="text-white text-2xl font-semibold tracking-wide overflow-hidden">$12,526,243.512</p>
                   <span class="text-white">Net Worth</span>
                 </div>
                 <span class="pl-6 flex items-center">
@@ -207,9 +209,9 @@
                 </span>
               </div>
   
-              <div class="w-1/3 bg-cyan py-8 px-6 rounded-lg border border-gray-250 shadow-lg flex items-enter justify-between mx-2">
+              <div class="col-span-6 md:col-span-3 lg:col-span-2 bg-cyan py-8 px-6 rounded-lg border border-gray-250 shadow-lg flex items-enter justify-between mb-4 mx-2">
                 <div class="">
-                  <p class="text-white text-2xl font-semibold tracking-wide">$12,526,243.512</p>
+                  <p class="text-white text-2xl font-semibold tracking-wide overflow-hidden">$12,526,243.512</p>
                   <span class="text-white">Total Worth</span>
                 </div>
                 <span class="pl-6 flex items-center">
@@ -234,9 +236,9 @@
                 </span>
               </div>
   
-              <div class="w-1/3 bg-purple py-8 px-6 rounded-lg border border-gray-250 shadow-lg flex items-enter justify-between mx-2">
+              <div class="col-span-6 md:col-span-3 lg:col-span-2 bg-purple py-8 px-6 rounded-lg border border-gray-250 shadow-lg flex items-enter justify-between mb-4 mx-2">
                 <div class="">
-                  <p class="text-white text-2xl font-semibold tracking-wide">$12,526,243.512</p>
+                  <p class="text-white text-2xl font-semibold tracking-wide overflow-hidden">$12,526,243.512</p>
                   <span class="text-white">Borrowed</span>
                 </div>
                 <span class="pl-6 flex items-center">
@@ -368,9 +370,6 @@
                       <span class="text-sm text-gray-400 tracking-wide leading-none">3,523,354 ETH</span>
                     </div>
                   </div>
-                  <div class="absolute px-4 py-2 leading-none mt-5 bg-secondary text-white text-xs top-0 right-0 leading-none">
-                    #32145
-                  </div>
                 </div>
 
                 <div class="bg-gray-400 mx-auto mb-4 mt-6 border-b border-gray-300 opacity-60"></div>
@@ -460,9 +459,6 @@
                       <p class="text-xl font-semibold tracking-wide leading-tight">$325.612.017</p>
                       <span class="text-sm text-gray-400 tracking-wide leading-none">3,523,354 ETH</span>
                     </div>
-                  </div>
-                  <div class="absolute px-4 py-2 leading-none mt-5 bg-secondary text-white text-xs top-0 right-0 leading-none">
-                    #32145
                   </div>
                 </div>
 

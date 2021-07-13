@@ -14,7 +14,11 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['Montserrat']
-      }
+      },
+      minWidth: {
+        '0': '0',
+        '96': '24rem',
+       }
     },
   },
   variants: {
